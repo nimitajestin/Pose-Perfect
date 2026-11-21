@@ -1,0 +1,27 @@
+{
+  "pose_name": "ChudGayeGuru",
+  "model_path": "trained_models/ChudGayeGuru/model.pt",
+  "dataset_path": "trained_models/ChudGayeGuru/dataset/dataset.yaml",
+  "training_args": {
+    "data": "trained_models/ChudGayeGuru/dataset/dataset.yaml",
+    "epochs": 10,
+    "imgsz": 640,
+    "batch": 16,
+    "device": "cpu",
+    "project": "trained_models/ChudGayeGuru",
+    "name": "training",
+    "save": true,
+    "save_period": 10,
+    "cache": false,
+    "augment": true,
+    "lr0": 0.01,
+    "warmup_epochs": 3,
+    "patience": 20,
+    "amp": false,
+    "verbose": true,
+    "exist_ok": true
+  },
+  "training_completed": true,
+  "epochs_trained": 10,
+  "best_weights_path": "trained_models/ChudGayeGuru/training/weights/best.pt"
+}

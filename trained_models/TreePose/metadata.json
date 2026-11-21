@@ -1,0 +1,27 @@
+{
+  "pose_name": "TreePose",
+  "model_path": "trained_models\\TreePose\\model.pt",
+  "dataset_path": "trained_models\\TreePose\\dataset\\dataset.yaml",
+  "training_args": {
+    "data": "trained_models\\TreePose\\dataset\\dataset.yaml",
+    "epochs": 20,
+    "imgsz": 640,
+    "batch": 4,
+    "device": "cuda:0",
+    "project": "trained_models\\TreePose",
+    "name": "training",
+    "save": true,
+    "save_period": 10,
+    "cache": false,
+    "augment": true,
+    "lr0": 0.01,
+    "warmup_epochs": 3,
+    "patience": 20,
+    "amp": false,
+    "verbose": true,
+    "exist_ok": true
+  },
+  "training_completed": true,
+  "epochs_trained": 20,
+  "best_weights_path": "trained_models\\TreePose\\training\\weights\\best.pt"
+}

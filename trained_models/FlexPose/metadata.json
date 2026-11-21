@@ -1,0 +1,27 @@
+{
+  "pose_name": "FlexPose",
+  "model_path": "trained_models\\FlexPose\\model.pt",
+  "dataset_path": "trained_models\\FlexPose\\dataset\\dataset.yaml",
+  "training_args": {
+    "data": "trained_models\\FlexPose\\dataset\\dataset.yaml",
+    "epochs": 30,
+    "imgsz": 640,
+    "batch": 2,
+    "device": "cuda:0",
+    "project": "trained_models\\FlexPose",
+    "name": "training",
+    "save": true,
+    "save_period": 10,
+    "cache": false,
+    "augment": true,
+    "lr0": 0.01,
+    "warmup_epochs": 3,
+    "patience": 20,
+    "amp": false,
+    "verbose": true,
+    "exist_ok": true
+  },
+  "training_completed": true,
+  "epochs_trained": 30,
+  "best_weights_path": "trained_models\\FlexPose\\training\\weights\\best.pt"
+}
